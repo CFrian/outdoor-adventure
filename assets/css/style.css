@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Noto Sans", sans-serif;
+    background-color: #ffffff
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat", sans-serif;
+}
+
+/*header*/
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("assets/images/hero-bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*bloc logo et navibar*/
+
+
+
+.navBar {
+    position: absolute;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #FFFFFF;
+    list-style-type: none;
+    /* enlève les puces*/
+}
+
+.onglets {
+    padding: 0;
+    margin: 0;
+    width: 40%;
+    height: 8vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #FFFFFF;
+    list-style-type: none;
+
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.logo {
+    width: 150px;
+    height: 42px;
+    vertical-align: middle;
+}
+
+
+.takeAction {
+    color: #ffffff;
+    font-family: "Noto Sans", sans-serif;
+}
+
+
+
+/*bloc de titre*/
+.scHeaderTitre {
+
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    gap: 11px;
+}
+
+
+button,
+.takeAction {
+    border: 1px;
+    border-radius: 80px;
+    background-color: #FB2056;
+    padding: 17px 40px;
+    color: #FFFFFF;
+    font-weight: bolder;
+    font-size: 0.9rem;
+}
+
+.headerHr {
+    height: 2px;
+    width: 64px;
+    background-color: #FB2056;
+    border: none;
+    margin: 0;
+}
+
+.headerH3 {
+    color: #FFFFFF;
+    margin: 0;
+    height: 31px;
+    font-size: 1.5rem;
+}
+
+h1 {
+    font-size: 64px;
+    color: #FFFFFF;
+    margin: 0;
+    height: 89px;
+}
+
+
+/*Section 02 CITATION*/
+
+.section02 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 18vh;
+    background-color: #ECECEC;
+    color: black;
+
+}
+
+.sc02ci {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    height: 50%;
+    color: #404040;
+    margin-right: 10%;
+
+}
+
+#imgGuillemets {
+    height: 72px;
+    width: 94px;
+    margin: 0 0px;
+}
+
+.sc02CitSign{
+    width: 100%;
+}
+
+#Citation {
+    margin: 0px 0px 20px 0px;
+    font-size: 1.3em;
+}
+
+#Signature {
+    margin: 0;
+    text-align: center;
+    color: #191919;
+}
+
+
+
+/*Secion 03  UPCOMING EVENT*/
+
+.section03 {
+    height: 850px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F5F5;
+
+}
+
+.events {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+}
+
+.sec03Dv01,
+.sec03Dv02 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#sc03hr {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    height: 3px;
+    width: 90px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.1em;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.sc03img {
+    box-shadow: 10px 10px #bcbcbc5b;
+    border-radius: 5px;
+    height: 290px;
+    width: 460px;
+}
+
+.sc03h5 {
+    margin: 40px 0px 10px;
+    font-size: 18px;
+}
+
+.section03 p {
+    width: 440px;
+    margin: 0px 0px 20px;
+    text-align: center;
+    text-wrap: wrap;
+}
+
+
+/*SECTION 04 EXPLORE THE WORLD  */
+
+.section04 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/images/section-bg-img.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 600px;
+
+}
+
+.section04 h2,
+.section04 p {
+    text-align: left;
+    margin: 0;
+    color: white;
+}
+
+.sc04 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+    height: 260px;
+    width: 600px;
+    margin: 0 0 20px 650px;
+    justify-items: left;
+
+}
+
+.sc04hr {
+    height: 3px;
+    border: none;
+    width: 60px;
+    background-color: #FB2056;
+}
+
+
+
+
+
+
+/* Secion 05  Upcoming Tours & Destination*/
+
+.section05 {
+    height: 850px;
+    padding: 150px;
+    background-color: #F5F5F5;
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sc05Dv01,
+.sc05Dv02,
+.sc05Dv03 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 10px;
+    height: 100%;
+}
+
+.sc05Dv01 {
+    color: black;
+    width: 90%;
+    height: 100%;
+    padding: 0 10px;
+    text-align: left;
+}
+
+#sc05im01,
+#sc05im02,
+#sc05im03,
+#sc05im04 {
+    border-radius: 5px;
+}
+
+#sc05im01 {
+    height: 220px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#sc05im02 {
+    height: 350px;
+    width: 100%;
+}
+
+#sc05im03 {
+    height: 350px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#sc05im04 {
+    height: 200px;
+    width: 100%;
+}
+
+#sc05Hr {
+    color: #FB2056;
+}
+
+/*FOOTER*/
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #191919;
+    height: 160px;
+    color: #FFFFFF;
+}
+
+footer p {
+
+    margin: 0;
+
+}
+
+#ft-p {
+    margin-bottom: 28px;
+}
