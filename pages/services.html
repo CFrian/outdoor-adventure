@@ -5,43 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../assets/css/style-services.css">
 </head>
 
 
 <body>
     <main>
+
+        <!-- HEADER -->
         <header>
-            <a href="./"><img src="assets/icons/white-logo.png" alt="Logo du site"></a>
-            <nav>
-                <ul>
+            <nav class="navBar">
+                <span> <a href="#"><img class="logo" src="../assets/icons/white-logo.png" alt="Logo du site"></a></span>
+                <ul class="onglets">
                     <li><a href="./">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="projects.html">Projets</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><button>TAKE ACTION</button></li>
-                    </li>
+                    <li><a href="./pages/about.html">About</a></li>
+                    <li><a href="./pages/services.html">Services</a></li>
+                    <li><a href="./pages/projects.html">Projets</a></li>
+                    <li><a href="./pages/contact.html">Contact</a></li>
+                    <li><a href="./" type="button" class="takeAction">TAKE ACTION</a></li>
                 </ul>
             </nav>
+            <section>
+                <h1>Services</h1>
+            </section>
+
         </header>
 
-        <section>
-            <img src="assets/images/services-bg.jpg" alt="paysage de montage, vallee">
-            <h1>SERVICES</h1>
-        </section>
 
 
-        <section>
+        <section class="section02">
             <h2>It's Time to Start Your Adventures</h2>
-            <p>Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-                tellus, luctus ullamcorpe pulvinar.</p>
+            <hr>
+            <p>Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <p> Ut elit tellus, luctus ullamcorpe pulvinar.</p>
         </section>
 
 
-        <section>
+        <section class="section03">
+
             <div>
-                <img src="assets/images/outdoor-image-03.jpg" alt="personne sur rocher regarde vallee">
+                <img class="sc03img" src="../assets/images/outdoor-image-03.jpg"
+                    alt="personne sur rocher regarde vallee">
                 <h5>
                     Backpacking Trips
                 </h5>
@@ -50,7 +55,7 @@
                 </p>
             </div>
             <div>
-                <img src="assets/images/services-2.jpg" alt="paysage vallee">
+                <img class="sc03img" src="../assets/images/services-2.jpg" alt="paysage vallee">
                 <h5>
                     Family Hiking Trips
                 </h5>
@@ -58,8 +63,12 @@
                     Fuerat aestu carentem habentia spectent tonitrua mutastis locavit liberioris inistra possedit.
                 </p>
             </div>
+        </section>
+
+        <section class="section04">
             <div>
-                <img src="assets/images/services-3.jpg" alt="barque sur un plan d'eau lac de montagne">
+                <img class="sc03img" src="../assets/images/services-3.jpg"
+                    alt="barque sur un plan d'eau lac de montagne">
                 <h5>
                     Water Sports
                 </h5>
@@ -68,7 +77,7 @@
                 </p>
             </div>
             <div>
-                <img src="assets/images/outdoor-image-01.jpg" alt="personne qui fait du ski">
+                <img class="sc03img" src="../assets/images/outdoor-image-01.jpg" alt="personne qui fait du ski">
                 <h5>
                     Winter Sports
                 </h5>
@@ -78,16 +87,18 @@
             </div>
         </section>
 
-        <section>
+
+        <section class="section05">
             <div>
                 <h3>
                     Why Outdoor Adventure
                 </h3>
+                <hr class="sc05hr">
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
                     luctus nec ullamcorper mattis, pulvinar dapibus leo.
                 </p>
-                 <ul>
+                <ul id="sc03ul">
                     <li>Experience: Locavit liberioris possedit</li>
                     <li>Reputation: Diremit mundi mare undae</li>
                     <li>Guide Experience: Spectent tonitrua mutastis</li>
@@ -97,11 +108,12 @@
                 <h3>
                     What You Get
                 </h3>
+                <hr class="sc05hr">
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
                     luctus nec ullamcorper mattis, pulvinar dapibus leo.
                 </p>
-                <ul>
+                <ul id="sc03ul">
                     <li>Private Hike: Locavit liberioris possedit</li>
                     <li>Transportation: Diremit mundi mare undae</li>
                     <li>Great Facilities: Spectent tonitrua mutastis</li>
@@ -112,8 +124,10 @@
 
 
 
+        <!--Secion 06 BAS DE PAGE-->
+
         <footer>
-            <p>123 Fifth Avenue, NY 10160, New York, USA | Phone: 800-123-456 | Email: contact@example.com</p>
+            <p id="ft-p">123 Fifth Avenue, NY 10160, New York, USA | Phone: 800-123-456 | Email: contact@example.com</p>
             <p>© 2026 Outdoor Adventure</p>
 
         </footer>

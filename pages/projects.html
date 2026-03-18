@@ -5,73 +5,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>projects</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../assets/css/style-project.css">
 </head>
 
 <body>
     <main>
         <header>
-            <a href="./"><img src="assets/icons/white-logo.png" alt="Logo du site"></a>
-            <nav>
-                <ul>
+            <nav class="navBar">
+                <span> <a href="./"><img class="logo" src="../assets/icons/white-logo.png"
+                            alt="Logo du site"></a></span>
+                <ul class="onglets">
                     <li><a href="./">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="projects.html">Projets</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><button>TAKE ACTION</button></li>
-                    </li>
+                    <li><a href="./pages/about.html">About</a></li>
+                    <li><a href="./pages/services.html">Services</a></li>
+                    <li><a href="./pages/projects.html">Projets</a></li>
+                    <li><a href="./pages/contact.html">Contact</a></li>
+                    <li><a href="./" type="button" class="takeAction">TAKE ACTION</a></li>
                 </ul>
             </nav>
+
+            <section>
+                <h1>Our Projects</h1>
+            </section>
+
         </header>
 
-        <section>
-            <img src="assets/images/project-background.jpg" alt="étendue d'eau">
-            <h1>Our Projects</h1>
-        </section>
 
 
         <section>
-            <h6>Adventure</h6>
-            <h2>Water Sports</h2>
-            <p>Interdum exercitation penatibus, praesentium facilisi accusamus fermentum, sagittis.</p>
-            <div>
-                <img src="assets/images/water-sports-03.jpg" alt="Bateau touristique côte">
-                <img src="assets/images/water-sports-04.jpg" alt="Bateau touristique côte">
-                <img src="assets/images/water-sports-01.jpg" alt="Bateau touristique côte">
-                <img src="assets/images/water-sports-02.jpg" alt="Bateau touristique côte">
+            <div class="scDv">
+                <div class="scTr">
+                    <h6>Adventure</h6>
+                    <hr>
+                </div>
+                <h2>Water Sports</h2>
+                <p>Interdum exercitation penatibus, praesentium facilisi accusamus fermentum, sagittis.</p>
             </div>
-        </section>
-
-
-        <section>
-            <h6>Snow Adventure</h6>
-            <h2>Winter Sports</h2>
-            <p>Interdum exercitation penatibus, praesentium facilisi accusamus fermentum, sagittis.</p>
             <div>
-                <img src="assets/images/winter-sports-01-nzqdakvd9y6ql3cjzkfjdcrr6o5msw2mv8o8ug2dqw.jpg"
-                    alt="Bateau touristique côte">
-                <img src="assets/images/winter-sports-02-nzqdabgzdltvczq7igd9of558tfynx1bhy5e1ogbh4.jpg"
-                    alt="Bateau touristique côte">
-                <img src="assets/images/winter-sports-03-nzqd8khsnpfnr49oq759jd19g02dc73axafuw51p20.jpg"
-                    alt="Bateau touristique côte">
-                <img src="assets/images/winter-sports-04-nzqd8b3erd2sj0nc932zufeni5cp781zjzx03dfms8.jpg"
-                    alt="Bateau touristique côte">
+                <img src="../assets/images/water-sports-03.jpg" alt="Bateau touristique côte">
+                <img src="../assets/images/water-sports-04.jpg" alt="Bateau touristique côte">
+                <img src="../assets/images/water-sports-01.jpg" alt="Bateau touristique côte">
+                <img src="../assets/images/water-sports-02.jpg" alt="Bateau touristique côte">
             </div>
         </section>
 
         <section>
-            <h6>Forest Tour</h6>
-            <h2>Camping</h2>
-            <p>Interdum exercitation penatibus, praesentium facilisi accusamus fermentum, sagittis.</p>
+            <div class="scDv">
+                <div class="scTr">
+                    <h6>Snow Adventure</h6>
+                    <hr>
+                </div>
+                <h2>Winter Sports</h2>
+                <p>Interdum exercitation penatibus, praesentium facilisi accusamus fermentum, sagittis.</p>
+            </div>
+
+
+
+
+            <div class="carrousel">
+                <!-- Radios -->
+                <input type="radio" name="slider" id="slide1" checked>
+                <input type="radio" name="slider" id="slide2">
+                <input type="radio" name="slider" id="slide3">
+                <input type="radio" name="slider" id="slide4">
+
+                <div class="slides">
+                    <div id="slide"><img
+                            src="../assets/images/winter-sports-01-nzqdakvd9y6ql3cjzkfjdcrr6o5msw2mv8o8ug2dqw.jpg"
+                            alt="Bateau touristique côte"></div>
+                    <div id="slide"> <img
+                            src="../assets/images/winter-sports-02-nzqdabgzdltvczq7igd9of558tfynx1bhy5e1ogbh4.jpg"
+                            alt="Bateau touristique côte"></div>
+                    <div id="slide"><img
+                            src="../assets/images/winter-sports-03-nzqd8khsnpfnr49oq759jd19g02dc73axafuw51p20.jpg"
+                            alt="Bateau touristique côte"></div>
+                    <div id="slide"> <img
+                            src="../assets/images/winter-sports-04-nzqd8b3erd2sj0nc932zufeni5cp781zjzx03dfms8.jpg"
+                            alt="Bateau touristique côte"></div>
+                </div>
+                <!-- boutons -->
+                <div class="dots">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
+                    <label for="slide4"></label>
+                </div>
+        </section>
+
+        <section>
+            <div class="scDv">
+                <div class="scTr">
+                    <h6>Forest Tour</h6>
+                    <hr>
+                </div>
+                <h2>Camping</h2>
+                <p>Interdum exercitation penatibus, praesentium facilisi accusamus fermentum, sagittis.</p>
+            </div>
             <div>
-                <img src="assets/images/camp-1-nzqd81p0v0pxax0zrz0q5hs1kan1290o6pe5altkig.jpg"
+                <img src="../assets/images/camp-1-nzqd81p0v0pxax0zrz0q5hs1kan1290o6pe5altkig.jpg"
                     alt="Bateau touristique côte">
-                <img src="assets/images/camp-2-nzqd7cbdqhr6lg1uw61ss66liw44af7x37s1c4v76g.jpg"
+                <img src="../assets/images/camp-2-nzqd7cbdqhr6lg1uw61ss66liw44af7x37s1c4v76g.jpg"
                     alt="Bateau touristique côte">
-                <img src="assets/images/camp-3-nzqd6qp3daxl6ex9eepdotmzv12oddu3c8rvarr95k.jpg"
+                <img src="../assets/images/camp-3-nzqd6qp3daxl6ex9eepdotmzv12oddu3c8rvarr95k.jpg"
                     alt="Bateau touristique côte">
-                <img src="assets/images/camp-4-nzqd6hapgykpybawxan3zw0dx6d08esryy90i056vs.jpg"
+                <img src="../assets/images/camp-4-nzqd6hapgykpybawxan3zw0dx6d08esryy90i056vs.jpg"
                     alt="Bateau touristique côte">
             </div>
         </section>
