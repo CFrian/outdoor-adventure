@@ -28,14 +28,11 @@ h6 {
 /*header*/
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/about-bg-5.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/about-bg-5.jpg");
     background-size: cover;
     background-position: center center;
     height: 56vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
 }
 
 /*bloc logo et navibar*/
@@ -43,24 +40,21 @@ header {
 
 
 .navBar {
-    position: absolute;
-    top: 0;
-    margin: 0;
-    padding: 0;
-    width: 80%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     color: #FFFFFF;
     list-style-type: none;
     /* enlève les puces*/
+    padding-top: 16px;
+
 }
+
 
 .onglets {
     padding: 0;
     margin: 0;
     width: 40%;
-    height: 8vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -81,9 +75,8 @@ a {
 }
 
 
+
 .takeAction {
-    color: #ffffff;
-    font-family: "Noto Sans", sans-serif;
     border: 1px;
     border-radius: 80px;
     background-color: #FB2056;
@@ -91,9 +84,12 @@ a {
     color: #FFFFFF;
     font-weight: bolder;
     font-size: 0.9rem;
-    transition: background-color 0.2s ease;
 }
 
+.button:hover,
+.takeAction:hover {
+    background-color: #cc093a;
+}
 
 
 /*bloc de titre*/
@@ -103,6 +99,16 @@ h1 {
     color: #FFFFFF;
     margin: 0;
     height: 89px;
+}
+
+.scHeaderTitre {
+    padding-top: 10rem;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    gap: 11px;
 }
 
 

@@ -4,12 +4,11 @@ html,
 body {
     margin: 0;
     padding: 0;
-}
-
-body {
     font-family: "Noto Sans", sans-serif;
     background-color: #ffffff
 }
+
+
 
 h1,
 h2,
@@ -27,10 +26,6 @@ header {
     background-size: cover;
     background-attachment: fixed;
     height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 /*bloc logo et navibar*/
@@ -38,24 +33,20 @@ header {
 
 
 .navBar {
-    position: absolute;
-    top: 0;
-    margin: 0;
-    padding: 0;
-    width: 80%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     color: #FFFFFF;
     list-style-type: none;
     /* enlève les puces*/
+    padding-top: 16px;
+
 }
 
 .onglets {
     padding: 0;
     margin: 0;
     width: 40%;
-    height: 8vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -79,7 +70,7 @@ a {
 
 /*bloc de titre*/
 .scHeaderTitre {
-
+    padding-top: 10rem;
     color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -88,15 +79,20 @@ a {
     gap: 11px;
 }
 
-button,
+.button,
 .takeAction {
-    border: 1x;
+    border: 1px;
     border-radius: 80px;
     background-color: #FB2056;
     padding: 17px 40px;
     color: #FFFFFF;
     font-weight: bolder;
     font-size: 0.9rem;
+}
+
+.button:hover,
+.takeAction:hover {
+    background-color: #cc093a;
 }
 
 .headerHr {
@@ -125,33 +121,19 @@ h1 {
 /*Section 02 CITATION*/
 
 .section02 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 18vh;
     background-color: #ECECEC;
-    color: black;
-
 }
 
 .sc02ci {
-    display: flex;
-    flex-direction: row;
-    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
     align-items: center;
-    justify-content: space-around;
-    width: 50%;
-    height: 50%;
-    color: #404040;
-    margin-right: 10%;
-
+    text-align: center;
 }
 
 #imgGuillemets {
-    height: 72px;
-    width: 94px;
-    margin: 0 0px;
+    height: 50%;
+    margin-left: auto;
 }
 
 .sc02CitSign {
@@ -159,13 +141,11 @@ h1 {
 }
 
 #Citation {
-    margin: 0px 0px 20px 0px;
     font-size: 1.3em;
+    color: #404040;
 }
 
 #Signature {
-    margin: 0;
-    text-align: center;
     color: #191919;
 }
 
@@ -174,20 +154,20 @@ h1 {
 /***** Secion 03  UPCOMING EVENT *****/
 
 .section03 {
-    height: 850px;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #F5F5F5;
-
 }
 
 .events {
     display: flex;
     justify-content: center;
-    gap: 50px;
-
+    gap: 10px;
+    height: 65%;
+    width: 75%;
 }
 
 .sec03Dv01,
@@ -197,13 +177,15 @@ h1 {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    width: 40%;
+
 }
 
 #sc03hr {
-    margin-top: 20px;
-    margin-bottom: 50px;
-    height: 3px;
-    width: 90px;
+    margin-top: 2.22vh;
+    margin-bottom: 5.55vh;
+    height: 0.33vh;
+    width: 6.25vw;
 }
 
 h2 {
@@ -213,57 +195,45 @@ h2 {
     margin: 0px;
 }
 
-
 .sc03img {
     box-shadow: 10px 10px #bcbcbc5b;
     border-radius: 5px;
-    height: 290px;
-    width: 460px;
+    height: 53%;
+    width: 83%;
+
 }
 
 .sc03h5 {
-    margin: 40px 0px 10px;
-    font-size: 18px;
+    margin: 4.44vh 0px 1.11vh;
+
+    font-size: 1.25vw;
+
 }
 
 .section03 p {
-    width: 440px;
-    margin: 0px 0px 20px;
+    width: 80%;
+    margin: 0px 0px 2.22vh;
     text-align: center;
     text-wrap: wrap;
 }
-
 
 /*SECTION 04 EXPLORE THE WORLD  */
 
 .section04 {
     display: flex;
     align-items: center;
-    justify-content: center;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/section-bg-img.jpg");
     background-size: cover;
     background-attachment: fixed;
-    height: 600px;
+    height: 65vh;
 
 }
+
 
 .section04 h2,
 .section04 p {
-    text-align: left;
-    margin: 0;
     color: white;
-}
-
-.sc04 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    gap: 20px;
-    height: 260px;
-    width: 600px;
-    margin: 0 0 20px 650px;
-    justify-items: left;
-
+    word-wrap: break-word;
 }
 
 .sc04hr {
@@ -274,20 +244,25 @@ h2 {
     margin: 0;
 }
 
+.sc04 {
 
-
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+    margin-left: auto;
+    padding-right: 20%;
+    width: 30%;
+}
 
 
 
 /* Secion 05  Upcoming Tours & Destination*/
 
 .section05 {
-    height: 850px;
-    padding: 150px;
+    height: 90vh;
     background-color: #F5F5F5;
-    display: grid;
-    flex-direction: row;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -298,53 +273,40 @@ h2 {
 .sc05Dv03 {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    margin: 10px;
-    height: 100%;
+    height: 75%;
+    width: 20%;
+    padding: 10px;
+    gap: 10px;
 }
 
 .sc05Dv01 {
     color: black;
-    width: 90%;
-    height: 100%;
-    padding: 0 10px;
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+    padding: 0 40px 0 0;
+    width: 319px;
 }
 
-#sc05im01,
-#sc05im02,
-#sc05im03,
-#sc05im04 {
+/* 
+sc05Dv01>h2 {
+    text-align: start;
+} */
+
+.sc05hr {
+    height: 3px;
+    border: none;
+    width: 60px;
+    background-color: #FB2056;
+    margin: 0;
+}
+
+.sc05Dv02>img,
+.sc05Dv03>img {
     border-radius: 5px;
 }
 
-#sc05im01 {
-    height: 220px;
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-#sc05im02 {
-    height: 350px;
-    width: 100%;
-}
-
-#sc05im03 {
-    height: 350px;
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-#sc05im04 {
-    height: 200px;
-    width: 100%;
-}
-
-#sc05Hr {
-    color: #FB2056;
-}
 
 /*FOOTER*/
 footer {
