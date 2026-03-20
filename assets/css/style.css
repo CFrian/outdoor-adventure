@@ -22,7 +22,7 @@ h6 {
 /*header*/
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/assets/images/hero-bg.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://websitedemos.net/outdoor-adventure-02/wp-content/uploads/sites/351/2018/11/hero-bg.jpg");
     background-size: cover;
     background-attachment: fixed;
     height: 80vh;
@@ -220,6 +220,7 @@ h2 {
 /*SECTION 04 EXPLORE THE WORLD  */
 
 .section04 {
+
     display: flex;
     align-items: center;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/section-bg-img.jpg");
@@ -328,3 +329,42 @@ footer p {
 #ft-p {
     margin-bottom: 28px;
 }
+
+
+
+@media(max-width: 768px) {
+    .logo {
+        width: 100px;
+        height: 28px;
+    }
+
+    header {
+        height: 50vh;
+    }
+
+    .headerH3 {
+        font-size: 1.5rem;
+    }
+
+    .scHeaderTitre>h1 {
+        font
+    }
+
+}
+
+/* @media (min-width: 992px) {
+
+    .navBar {
+        position: absolute;
+        right: 0;
+
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .navBar {
+        display: flex;
+
+    }
+} */

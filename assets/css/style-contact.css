@@ -185,11 +185,12 @@ form {
     font-size: 1rem;
     margin: 6px 0;
     padding: 10px 12px;
-    height: 35px;
+    height: 120px;
     border-color: #191919;
     border-radius: 5px;
     border: 1px solid #40404098;
     background-color: #f1f1f1;
+
 }
 
 #textarea:hover {
@@ -197,10 +198,20 @@ form {
 }
 
 
-.button {
+button {
     height: 46px;
     width: 147px;
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: #FB2056;
+    color: #FFFFFF;
+    font-weight: bold;
 }
+
+button:hover {
+    background-color: #cc093a;
+}
+
 
 h5 {
     font-size: 1rem;
