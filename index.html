@@ -10,29 +10,29 @@
 <!-- HEADER -->
 
 <body>
+    <header>
+        <nav class="navBar">
+            <span> <a href="./"><img class="logo" src="./assets/icons/white-logo.png" alt="Logo du site"></a></span>
+            <button class="menuBurger" id="menuBurger">☰</button>
+            <ul class="onglets">
+                <li><a href="./">Home</a></li>
+                <li><a href="./pages/about.html">About</a></li>
+                <li><a href="./pages/services.html">Services</a></li>
+                <li><a href="./pages/projects.html">Projets</a></li>
+                <li><a href="./pages/contact.html">Contact</a></li>
+                <li><a href="./" type="button" class="takeAction">TAKE ACTION</a></li>
+            </ul>
+        </nav>
+
+        <section class="scHeaderTitre">
+            <h3 class="headerH3">Explore the Colourful World</h3>
+            <hr class="headerHr">
+            <h1>A Wonderful Gift</h1>
+            <a href="./" type="button" class="button">LEARN MORE</a>
+        </section>
+    </header>
+
     <main>
-        <header>
-            <nav class="navBar">
-                <span> <a href="./"><img class="logo" src="./assets/icons/white-logo.png" alt="Logo du site"></a></span>
-                <ul class="onglets">
-                    <li><a href="./">Home</a></li>
-                    <li><a href="./pages/about.html">About</a></li>
-                    <li><a href="./pages/services.html">Services</a></li>
-                    <li><a href="./pages/projects.html">Projets</a></li>
-                    <li><a href="./pages/contact.html">Contact</a></li>
-                    <li><a href="./" type="button" class="takeAction">TAKE ACTION</a></li>
-                </ul>
-            </nav>
-
-            <section class="scHeaderTitre">
-                <h3 class="headerH3">Explore the Colourful World</h3>
-                <hr class="headerHr">
-                <h1>A Wonderful Gift</h1>
-                <a href="./" type="button" class="button">LEARN MORE</a>
-            </section>
-        </header>
-
-
         <!--Section 02 CITATION  -->
         <section class="section02">
             <div class="sc02ci">
@@ -112,17 +112,20 @@
             </div>
         </section>
 
-        <!--Secion 06 BAS DE PAGE-->
-
-        <footer>
-            <p id="ft-p">123 Fifth Avenue, NY 10160, New York, USA | Phone: 800-123-456 | Email: contact@example.com</p>
-            <p>© 2026 Outdoor Adventure</p>
-
-        </footer>
-
-
-
     </main>
+    <!--Secion 06 BAS DE PAGE-->
+    <footer>
+        <p id="ft-p">123 Fifth Avenue, NY 10160, New York, USA | Phone: 800-123-456 | Email: contact@example.com</p>
+        <p>© 2026 Outdoor Adventure</p>
+    </footer>
+    <script>
+        const burger = document.getElementById('menuBurger')
+        const onglets = document.getElementById('onglets')
+        burger.addEventListener('click', () => {
+            onglets.classList.toggle('open')
+        })
+    </script>
+
 </body>
 
 </html>
