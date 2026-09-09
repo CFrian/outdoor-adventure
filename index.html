@@ -13,10 +13,14 @@
     <header>
         <nav class="navBar">
             <span> <a href="./"><img class="logo" src="./assets/icons/white-logo.png" alt="Logo du site"></a></span>
+<<<<<<< HEAD
             <input type="checkbox" id="menu-toggle" class="menu-toggle">
             <label for="menu-toggle" class="burger" aria-label="Ouvrir le menu">
                 <span></span><span></span><span></span>
             </label>
+=======
+            <button class="menuBurger" id="menuBurger">☰</button>
+>>>>>>> 02165d7526a298ab694bc49f1376671d2480c9ed
             <ul class="onglets">
                 <li><a href="./">Home</a></li>
                 <li><a href="./pages/about.html">About</a></li>
@@ -115,17 +119,20 @@
             </div>
         </section>
 
-        <!--Secion 06 BAS DE PAGE-->
-
-        <footer>
-            <p id="ft-p">123 Fifth Avenue, NY 10160, New York, USA | Phone: 800-123-456 | Email: contact@example.com</p>
-            <p>© 2026 Outdoor Adventure</p>
-
-        </footer>
-
-
-
     </main>
+    <!--Secion 06 BAS DE PAGE-->
+    <footer>
+        <p id="ft-p">123 Fifth Avenue, NY 10160, New York, USA | Phone: 800-123-456 | Email: contact@example.com</p>
+        <p>© 2026 Outdoor Adventure</p>
+    </footer>
+    <script>
+        const burger = document.getElementById('menuBurger')
+        const onglets = document.getElementById('onglets')
+        burger.addEventListener('click', () => {
+            onglets.classList.toggle('open')
+        })
+    </script>
+
 </body>
 
 </html>
